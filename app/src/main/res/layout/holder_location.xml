@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textPosition"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        tools:text="0"/>
+
+    <TextView
+        android:id="@+id/textPrefixLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@id/textPosition"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/holder_location_text_lat"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@id/textPrefixLat"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0.00000000"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textPrefixLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/textLatitude"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/holder_location_text_long"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@id/textPrefixLong"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        tools:text="0.00000000"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

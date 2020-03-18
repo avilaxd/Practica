@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <string name="button_track">START TRACKING</string>
+    <string name="edit_number_hint">Phone number</string>
+    <string name="fragment_main_input_error">Cannot be empty</string>
+    <string name="fragment_tracking_text_tracking">Tracking&#8230;</string>
+    <string name="holder_location_text_lat">lat:</string>
+    <string name="holder_location_text_long">long:</string>
+    <string name="fragment_tracking_error_location">YOU NEED TO GRANT LOCATION PERMISSIONS</string>
+    <string name="fragment_tracking_error_sms">YOU NEED TO GRANT SMS PERMISSIONS</string>
+    <string name="fragment_tracking_sms_message">Phone A moved 1 meter or more.</string>
+    <string name="fragment_tracking_sms_sent">MESSAGE SENT SUCCESSFULLY</string>
+    <string name="fragment_tracking_sms_not_sent">ERROR: MESSAGE WAS NOT SENT</string>
+    <string name="dialog_message_sms_sending">Sending SMS&#8230;</string>
+</resources>

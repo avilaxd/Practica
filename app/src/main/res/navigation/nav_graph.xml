@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.rudio.practice.ui.fragments.FragmentMain"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentTracking"
+            app:destination="@id/fragmentTracking"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTracking"
+        android:name="com.rudio.practice.ui.fragments.FragmentTracking"
+        android:label="FragmentTracking"
+        tools:layout="@layout/fragment_tracking">
+
+        <argument
+            android:name="phoneNumber"
+            app:argType="com.rudio.practice.data.PhoneNumber"/>
+    </fragment>
+</navigation>
